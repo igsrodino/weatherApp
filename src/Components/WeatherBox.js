@@ -1,6 +1,5 @@
 import React from 'react';
 import './WeatherBox.css';
-import Results from './Results.js'
 import WeatherResults from './WeatherResults.js'
 
 class WeatherBox extends React.Component {
@@ -34,7 +33,7 @@ class WeatherBox extends React.Component {
        );
         const json = await apiCall.json();
 
-        if (json.cod == 200){
+        if (json.cod === 200){
           this.setState({
           temperature: json.main.temp,
           city: json.name,
