@@ -4,8 +4,8 @@ import './Header.css';
 function Header() {
   return (
       <div className="Header">
-        <h1>Weather App</h1>
-
+        <h2>Weather App</h2>
+        <p>Enter Country and City to find current Weather Conditions</p>
       </div>
 
 
